@@ -1,6 +1,6 @@
 class Price < ApplicationRecord
 
-  abo = {3: 3.73, 6: 5.99, 9: 9.94}
+  abo = { 3: 3.73, 6: 5.99, 9: 9.94 }
   cta = 0.2193
   taxes_abo = 13.92 + 18.24
 
@@ -12,7 +12,6 @@ class Price < ApplicationRecord
   end
 
   def price_conso(conso)
-
     ht = (conso / 1000 * 100.3) + conso / 1000 + conso / 1000 * 6.63 + conso / 1000 * 37.10
     (ht * 1.20) / 1000
   end
